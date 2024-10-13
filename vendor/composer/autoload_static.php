@@ -6,13 +6,17 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitce601a5c123415b0d49bc511dfe3dceb
 {
-    public static $prefixesPsr0 = array (
-        'S' => 
+    public static $prefixLengthsPsr4 = array (
+        'F' => 
         array (
-            'Sunra\\PhpSimple\\HtmlDomParser' => 
-            array (
-                0 => __DIR__ . '/..' . '/sunra/php-simple-html-dom-parser/Src',
-            ),
+            'Facebook\\WebDriver\\' => 19,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Facebook\\WebDriver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-webdriver/webdriver/lib',
         ),
     );
 
@@ -23,7 +27,8 @@ class ComposerStaticInitce601a5c123415b0d49bc511dfe3dceb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInitce601a5c123415b0d49bc511dfe3dceb::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitce601a5c123415b0d49bc511dfe3dceb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitce601a5c123415b0d49bc511dfe3dceb::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInitce601a5c123415b0d49bc511dfe3dceb::$classMap;
 
         }, null, ClassLoader::class);

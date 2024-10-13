@@ -19,12 +19,12 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'sunra/php-simple-html-dom-parser' => array(
-            'pretty_version' => 'v1.5.2',
-            'version' => '1.5.2.0',
-            'reference' => '75b9b1cb64502d8f8c04dc11b5906b969af247c6',
+        'php-webdriver/webdriver' => array(
+            'pretty_version' => '1.1.3',
+            'version' => '1.1.3.0',
+            'reference' => 'b7186fb1bcfda956d237f59face250d06ef47253',
             'type' => 'library',
-            'install_path' => __DIR__ . '/../sunra/php-simple-html-dom-parser',
+            'install_path' => __DIR__ . '/../php-webdriver/webdriver',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
